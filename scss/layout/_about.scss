@@ -41,4 +41,19 @@
       color: $purple900;
     }
 }
+
+.typewriter-title {
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  animation: typing-title 2s steps(20, end) forwards;
+}
+
+@keyframes typing-title {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
   
