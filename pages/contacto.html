@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - Receteando</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="bg-pink-100">
+    <header>
+      <nav class="navbar">
+        <img src="../assets/icon-logo.jpeg" alt="Logo" class="logo" />
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a href="./categorias.html">Categorías</a></li>
+          <li><a href="./sobre-nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <form class="search">
+          <input type="search" placeholder="Ej: Tortas" />
+          <button type="submit">Buscar</button>
+        </form>
+        <div class="auth-buttons">
+          <a href="#">Iniciar Sesión</a>
+          <a href="#">Registrarse</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="text-center">
+        <h1 class="text-purple-900">Contáctenos</h1>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-row">
+          <div class="contact-img">
+            <img src="../assets/ImgRecetas/contImg.jpg" alt="Imagen de contacto" />
+            <p>
+              ¡Hola! Si quieres ponerte en contacto con nosotros, rellena este
+              formulario y deja tu consulta. En la brevedad será respondido.
+              ¡Gracias por cocinar con nosotros!
+            </p>
+          </div>
+          <div class="contact-form">
+            <h2>Formulario de Contacto</h2>
+            <form>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" required />
+
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" required />
+
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="4" required></textarea>
+
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>No necesitas ser un chef, solo el deseo de intentarlo.</p>
+      <p>&copy; 2025 Recetas Deliciosas. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+  </body>
+</html>

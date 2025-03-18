@@ -1,0 +1,44 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+  
+.about-row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+}
+  
+.about-img {
+    flex: 1 1 40%;
+  
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+}
+  
+.about-text {
+    flex: 1 1 55%;
+  
+    h2 {
+      color: $purple;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: $purple900;
+    }
+}
+  

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Categorías - Receteando</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body class="bg-pink-100">
+        <header>
+            <nav class="navbar">
+                <img src="../assets/Logo.jpeg" alt="Logo" class="logo" />
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./recetas.html">Recetas</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="./sobre-nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+                <form class="search">
+                    <input type="search" placeholder="Ej: Tortas" />
+                    <button type="submit">Buscar</button>
+                </form>
+                <div class="auth-buttons">
+                    <a href="#">Iniciar Sesión</a>
+                    <a href="#">Registrarse</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="text-center">
+                <h1 class="text-purple-900">Categorías de Recetas</h1>
+                <p class="fs-4">Explora nuestras categorías y encuentra tu receta ideal.</p>
+            </section>
+
+            <!-- Categorías -->
+            <section class="row">
+                <!-- Repetir estructura para cada categoría -->
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catPostres.jpg" alt="Postres" />
+                    <h2>Postres</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catEnsaladas.jpg" alt="Ensaladas" />
+                    <h2>Ensaladas</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catDesayunos.jpg" alt="Desayunos" />
+                    <h2>Desayunos</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catSandwichs.jpg" alt="Sandwichs" />
+                    <h2>Sandwichs</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catNuggets.jpg" alt="Nuggets" />
+                    <h2>Nuggets</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catTartasSaladas.jpg" alt="Tartas Saladas" />
+                    <h2>Tartas Saladas</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catLicuados.jpg" alt="Licuados" />
+                    <h2>Licuados</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catSopas.jpg" alt="Sopas" />
+                    <h2>Sopas</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catVeggies.jpg" alt="Veggies" />
+                    <h2>Veggies</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catSnacks.jpg" alt="Snacks" />
+                    <h2>Snacks</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catTortas.jpg" alt="Tortas" />
+                    <h2>Tortas</h2>
+                </div>
+                <div class="col-md-3 recipe-card">
+                    <img src="../assets/ImgRecetas/catCarnes.jpg" alt="Carnes" />
+                    <h2>Carnes</h2>
+                </div>
+                <!-- Más categorías similares -->
+            </section>
+        </main>
+
+        <footer>
+            <p>No necesitas ser un chef, solo el deseo de intentarlo.</p>
+            <p>&copy; 2025 Recetas Deliciosas. Todos los derechos reservados.</p>
+        </footer>
+
+        <script>
+            const toggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            toggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        </script>
+    </body>
+</html>

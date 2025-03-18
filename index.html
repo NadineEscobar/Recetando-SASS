@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Receteando</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="bg-pink-100">
+        <header>
+            <nav class="navbar">
+            <img src="./assets/icon-logo.jpeg" alt="Logo" class="logo" />
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/recetas.html">Recetas</a></li>
+                <li><a href="./pages/categorias.html">Categorías</a></li>
+                <li><a href="./pages/sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+            <form class="search">
+                <input type="search" placeholder="Ej: Tortas" />
+                <button type="submit">Buscar</button>
+            </form>
+            <div class="auth-buttons">
+                <a href="#">Iniciar Sesión</a>
+                <a href="#">Registrarse</a>
+            </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="text-center mb-4">
+                <h1 class="fs-1 text-purple-900">Bienvenidos a Recetas Deliciosas</h1>
+                <p class="fs-4">Encuentra las mejores recetas para cada ocasión.</p>
+            </section>
+
+            <!-- Carrusel -->
+            <section class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/ImgRecetas/cazuelaMarisco.jpg" alt="Cazuela-marisco" />
+                        <div class="carousel-caption">
+                            <h3>CAZUELA DE MARISCO 🍴</h3>
+                            <p>¡Los clásicos no pasan de moda!</p>
+                            <a href="#" class="btn">VER RECETA</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/ImgRecetas/ensaladaVerde.jpg" alt="Ensalada" />
+                        <div class="carousel-caption">
+                            <h3>ENSALADA VERDE 🥗</h3>
+                            <p>Refrescante y deliciosa.</p>
+                            <a href="#" class="btn">VER RECETA</a>
+                        </div>
+                    </div>
+                        <div class="carousel-item">
+                        <img src="./assets/ImgRecetas/bizcoNaranj.jpg" alt="Bizcocho" />
+                        <div class="carousel-caption">
+                            <h3>BIZCOCHO DE NARANJA 🍊</h3>
+                            <p>Un postre dulce y esponjoso.</p>
+                            <a href="#" class="btn">VER RECETA</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev">&#10094;</button>
+                <button class="carousel-control next">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span data-index="0" class="indicator active"></span>
+                    <span data-index="1" class="indicator"></span>
+                    <span data-index="2" class="indicator"></span>
+                </div>
+            </section>
+            
+
+            <!-- Destacadas -->
+            <section class="mb-4">
+                <h2 class="text-pink100 text-center bg-purple">Destacadas</h2>
+                <div class="row">
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/pastelDePapa-640x477.jpg" alt="Pastel de Papa" />
+                            <div class="overlay">Pastel de Papa</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/canastitaChocloyZapalloAnco.jpg" alt="Canastita de Choclo y Zapallo" />
+                            <div class="overlay">Canastita de Choclo y Zapallo</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/sandPollo.jpg" alt="Sandwich de Pollo" />
+                            <div class="overlay">Sandwich de Pollo </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/bifeCriolla.jpg" alt="Bife a la Criolla" />
+                            <div class="overlay">Bife a la Criolla</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/chipacitoChipa.jpg" alt="Chipacito" />
+                            <div class="overlay">Chipacito</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/helaChocoOreo.jpg" alt="Helado Oreo" />
+                            <div class="overlay">Helado Oreo con chips de Chocolate</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/tartaPatafrola.jpg" alt="Tarta de Pastafrola" />
+                            <div class="overlay">Tarta de Pastafrola</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/bizcoNaranj.jpg" alt="Bizcochuelo de Naranja" />
+                            <div class="overlay">Bizcochuelo de Naranja</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Últimas Recetas -->
+            <section class="mb-4">
+                <h2 class="text-pink100 text-center bg-purple">Últimas Recetas</h2>
+                <div class="row">
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/postreFlan.jpg" alt="Flan casero" />
+                            <div class="overlay">Flan casero</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/milanesaPurePapa.jpg" alt="Milanesa con pure de papa" />
+                            <div class="overlay">Milanesa con Pure de Papa</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/sopaZapalloAnco.jpg" alt="Sopa de zapallo anco" />
+                            <div class="overlay">Sopa de Zapallo Anco</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/pizzaNapo.png" alt="Pizza Napolitana" />
+                            <div class="overlay">Pizza Napolitana</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/sopaParaguaya.jpg" alt="Sopa paraguaya" />
+                            <div class="overlay">Sopa paraguaya</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/minSandSalame.jpg" alt="Mini sandwich de Salame" />
+                            <div class="overlay">Mini sandwich de Salame</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/cazuelaMarisco.jpg" alt="Cazuela de Marisco" />
+                            <div class="overlay">Cazuela de Marisco</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/guisoLentejas.jpg" alt="Guiso de Lentejas" />
+                            <div class="overlay">Guiso de Lentejas</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categorías -->
+            <section class="mb-4">
+                <h2 class="text-pink100 text-center bg-purple">Categorías</h2>
+                <div class="row">
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catCarnes.jpg" alt="Carnes" />
+                            <div class="overlay">Carnes</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catSandwichs.jpg" alt="Sandwichs" />
+                            <div class="overlay">Sandwichs</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catDesayunos.jpg" alt="Desayunos" />
+                            <div class="overlay">Desayunos</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catMasasSaladas.jpg" alt="Masas Saladas" />
+                            <div class="overlay">Masas Saladas</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catEnsaladas.jpg" alt="Ensaladas" />
+                            <div class="overlay">Ensaladas</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catSnacks.jpg" alt="Snacks" />
+                            <div class="overlay">Snacks</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catLicuados.jpg" alt="Licuados" />
+                            <div class="overlay">Licuados</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 recipe-card">
+                        <a href="#">
+                            <img src="./assets/ImgRecetas/catTortas.jpg" alt="Tortas" />
+                            <div class="overlay">Tortas</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>No necesitas ser un chef, solo el deseo de intentarlo.</p>
+            <p>&copy; 2025 Recetas Deliciosas. Todos los derechos reservados.</p>
+        </footer>
+
+        <script>
+            // Navbar toggle.
+            const toggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const navbar = document.querySelector('.navbar');
+            toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+          
+            // Carrusel.
+            const items = document.querySelectorAll('.carousel-item');
+            const indicators = document.querySelectorAll('.indicator');
+            const totalItems = items.length;
+            let currentIndex = 0;
+          
+            const showItem = (index) => {
+              items.forEach((item, i) => {
+                item.style.display = i === index ? 'block' : 'none';
+                indicators[i].classList.toggle('active', i === index);
+              });
+            };
+          
+            const nextItem = () => {
+              currentIndex = (currentIndex + 1) % totalItems;
+              showItem(currentIndex);
+            };
+          
+            const prevItem = () => {
+              currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+              showItem(currentIndex);
+            };
+          
+            document.querySelector('.next').addEventListener('click', nextItem);
+            document.querySelector('.prev').addEventListener('click', prevItem);
+          
+            // Indicadores.
+            indicators.forEach(indicator => {
+              indicator.addEventListener('click', (e) => {
+                    const index = parseInt(e.target.dataset.index);
+                    currentIndex = index;
+                    showItem(currentIndex);
+                });
+            });
+          
+            showItem(currentIndex);
+            setInterval(nextItem, 4000);
+          </script>          
+    </body>
+</html>
+        

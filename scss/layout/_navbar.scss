@@ -1,0 +1,59 @@
+.navbar {
+    background-color: $purple;
+    @include flex-center(20px, row, space-between);
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    position: relative;
+
+  .logo {
+        width: 200px;
+    }
+
+  .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+
+        li a {
+            color: $white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+
+   .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        color: $white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .search {
+        @include flex-center(10px);
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+    }
+
+    .auth-buttons {
+        @include flex-center(10px);
+
+        a {
+            color: $white;
+            border: 1px solid $white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $white;
+                color: $purple;
+            }
+        }
+    }
+}

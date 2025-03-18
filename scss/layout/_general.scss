@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: $fontArial;
+    background-color: $pink100;
+}
+  
+.text-center {
+    @include responsive-text-center;
+}
+  
+.text-purple-900 {
+    color: $purple900;
+}
+  
+.bg-purple {
+    background-color: $purple;
+    color: $white;
+    padding: 10px;
+}
+  
+.text-pink100 {
+    color: $pink100;
+}
