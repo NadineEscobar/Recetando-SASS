@@ -366,14 +366,8 @@ body {
 }
 
 .recipe-card {
-  color: black;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .recipe-card img {
   width: 100%;
@@ -381,12 +375,9 @@ body {
   object-fit: cover;
   border-radius: 5px;
 }
-.recipe-card h2 {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-.recipe-card p {
-  flex-grow: 1;
+.recipe-card a {
+  display: block;
+  position: relative;
 }
 .recipe-card .overlay {
   position: absolute;
@@ -396,9 +387,6 @@ body {
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
-}
-.recipe-card .btn {
-  margin-top: auto;
 }
 
 .card {
