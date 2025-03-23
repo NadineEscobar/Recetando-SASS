@@ -1,53 +1,45 @@
 @media(max-width: 768px) {
   .navbar {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;  
-
-    .nav-links {
-    display: flex; 
-    flex-direction: column;
-    position: absolute;
-    top: 70px; 
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-
-    &.open {
-      display: flex;
-    }
-      li {
-        margin: 10px 0;
-      }
-
-      a {
-        font-size: 1.2rem;
-        color: $white;
-        text-decoration: none;
-      }
-    }
-
-    .menu-toggle {
-      display: block;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin-top: 10px;
-      color: $white;
-    }
-
-    .auth-buttons,
-    .search {
-      display: flex;
-    }
+    padding: 10px;
+    position: relative;
   }
 
-  // Cuando el menú esté abierto
-  .navbar.open .nav-links {
+  .navbar .nav-links {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  background-color: #311e54;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1000;
+  }
+
+  .navbar .nav-links.open {
     display: flex;
+  }
+
+  .navbar .nav-links li {
+    margin: 15px 0;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .navbar .auth-buttons,
+  .navbar .search {
+    display: none; 
   }
 
   .search input {
