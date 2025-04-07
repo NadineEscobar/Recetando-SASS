@@ -1,4 +1,44 @@
 @media(max-width: 768px) {
+  .recipe-card {
+    position: relative;
+    a {
+      display: block;
+      position: relative;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      h2 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6); // fondo semitransparente para contraste
+        color: white;
+        padding: 8px;
+        font-size: 1rem;
+        text-align: center;
+        z-index: 1;
+      }
+    }
+  }  
+  
+  p {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-size: 0.9rem;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin: 8px 0;
+  }
   .navbar {
     flex-direction: row;
     align-items: center;
@@ -47,7 +87,18 @@
   }
 
   .carousel-caption{
-    top: 10%
+    top: 10%;
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 0;
+      word-break: break-word; // rompe palabras largas
+    }
+  
+    p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
   }
 
   .about-row {
@@ -65,10 +116,15 @@
 
   .contact-form {
     align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%
   }
 
   .contact-form form {
-    width: 100%;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .contact-form input,
