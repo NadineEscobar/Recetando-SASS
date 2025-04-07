@@ -354,6 +354,7 @@ body {
   opacity: 0;
   transform: translateY(100%);
   transition: all 0.3s ease;
+  z-index: 10;
 }
 .recipe-card:hover h2 {
   opacity: 1;
@@ -446,6 +447,7 @@ footer .social-links a:hover {
 @media (max-width: 768px) {
   .recipe-card {
     position: relative;
+    overflow: hidden;
   }
   .recipe-card a {
     display: block;
@@ -461,18 +463,22 @@ footer .social-links a:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(49, 30, 84, 0.7);
     color: white;
     padding: 8px;
     font-size: 1rem;
     text-align: center;
     z-index: 1;
   }
-  p {
+  .recipe-card p {
     display: block;
     margin-top: 10px;
-    color: #333;
+    color: #030000;
     font-size: 0.9rem;
+  }
+  .recipe-card h2 {
+    opacity: 1;
+    transform: translateY(0);
   }
   .info {
     display: flex;
